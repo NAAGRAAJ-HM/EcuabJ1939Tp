@@ -131,7 +131,9 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::InitFunction(
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_J1939Tp::DeInitFunction(void){
+FUNC(void, J1939TP_CODE) module_J1939Tp::DeInitFunction(
+   void
+){
 #if(STD_ON == J1939Tp_InitCheck)
    if(
          E_OK
@@ -154,7 +156,9 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::DeInitFunction(void){
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_J1939Tp::MainFunction(void){
+FUNC(void, J1939TP_CODE) module_J1939Tp::MainFunction(
+   void
+){
 #if(STD_ON == J1939Tp_InitCheck)
    if(
          E_OK
@@ -176,7 +180,9 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::MainFunction(void){
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_J1939Tp::dummy(void){
+FUNC(void, J1939TP_CODE) module_J1939Tp::dummy(
+   void
+){
 }
 
 /******************************************************************************/

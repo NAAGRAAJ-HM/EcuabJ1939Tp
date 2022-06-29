@@ -41,13 +41,9 @@ class module_J1939Tp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-            Std_TypeReturn          IsInitDone{E_NOT_OK};
-      const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
             infPduRClient_Lo        infPduRClient_J1939Tp;
 
    public:
-      module_J1939Tp(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
-      }
       FUNC(void, J1939TP_CODE) InitFunction(
          CONSTP2CONST(CfgModule_TypeAbstract, J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
       );
@@ -72,18 +68,7 @@ CONSTP2VAR(infSchMClient, J1939TP_VAR, J1939TP_CONST) gptrinfSchMClient_J1939Tp 
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_J1939Tp, J1939TP_VAR) J1939Tp(
-   {
-         J1939TP_AR_RELEASE_VERSION_MAJOR
-      ,  J1939TP_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
-);
+VAR(module_J1939Tp, J1939TP_VAR) J1939Tp;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */

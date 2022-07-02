@@ -83,12 +83,7 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::InitFunction(
    ){
 #endif
       if(NULL_PTR != lptrCfgModule){
-         if(STD_HIGH){
-            lptrCfg = lptrCfgModule;
-         }
-         else{
-            lptrCfg = &PBcfgJ1939Tp;
-         }
+         lptrCfg = lptrCfgModule;
       }
       else{
 #if(STD_ON == J1939Tp_DevErrorDetect)

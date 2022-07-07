@@ -35,8 +35,6 @@
 /* CONSTS                                                                     */
 /******************************************************************************/
 CONSTP2VAR(infEcuMClient, J1939TP_VAR, J1939TP_CONST) gptrinfEcuMClient_J1939Tp = &J1939Tp;
-CONSTP2VAR(infDcmClient,  J1939TP_VAR, J1939TP_CONST) gptrinfDcmClient_J1939Tp  = &J1939Tp;
-CONSTP2VAR(infSchMClient, J1939TP_VAR, J1939TP_CONST) gptrinfSchMClient_J1939Tp = &J1939Tp;
 
 /******************************************************************************/
 /* PARAMS                                                                     */

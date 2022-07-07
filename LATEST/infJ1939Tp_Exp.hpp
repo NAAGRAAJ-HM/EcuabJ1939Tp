@@ -8,9 +8,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "infJ1939Tp_EcuM.hpp"
-#include "infJ1939Tp_Dcm.hpp"
 #include "infJ1939Tp_Det.hpp"
-#include "infJ1939Tp_SchM.hpp"
 #include "infPduRClient_Lo.hpp"
 
 /******************************************************************************/

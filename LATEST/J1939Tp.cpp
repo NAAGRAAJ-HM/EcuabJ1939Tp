@@ -48,7 +48,8 @@ VAR(module_J1939Tp, J1939TP_VAR) J1939Tp;
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(void, J1939TP_CODE) module_J1939Tp::InitFunction(
-   CONSTP2CONST(CfgModule_TypeAbstract, J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
+      CONSTP2CONST(ConstModule_TypeAbstract, J1939TP_CONST,       J1939TP_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == J1939Tp_InitCheck)
    if(
@@ -56,8 +57,12 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::InitFunction(
       != IsInitDone
    ){
 #endif
-      if(NULL_PTR != lptrCfgModule){
-         lptrCfg = lptrCfgModule;
+      if(
+            (NULL_PTR != lptrConstModule)
+         && (NULL_PTR != lptrCfgModule)
+      ){
+         lptrConst = lptrConstModule;
+         lptrCfg   = lptrCfgModule;
       }
       else{
 #if(STD_ON == J1939Tp_DevErrorDetect)

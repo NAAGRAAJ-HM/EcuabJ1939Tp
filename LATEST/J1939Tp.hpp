@@ -7,6 +7,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "ConstJ1939Tp.hpp"
 #include "CfgJ1939Tp.hpp"
 #include "J1939Tp_core.hpp"
 #include "infJ1939Tp_Exp.hpp"
@@ -31,6 +32,7 @@ class module_J1939Tp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
+      const ConstJ1939Tp_Type* lptrConst = (ConstJ1939Tp_Type*)NULL_PTR;
       infPduRClient_Lo infPduRClient_J1939Tp;
 
    public:
@@ -38,7 +40,8 @@ class module_J1939Tp:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, J1939TP_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
+            CONSTP2CONST(ConstModule_TypeAbstract, J1939TP_CONST,       J1939TP_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
       );
       FUNC(void, J1939TP_CODE) DeInitFunction (void);
       FUNC(void, J1939TP_CODE) MainFunction   (void);

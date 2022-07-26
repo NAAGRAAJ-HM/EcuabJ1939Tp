@@ -61,7 +61,7 @@ FUNC(void, J1939TP_CODE) module_J1939Tp::InitFunction(
             (NULL_PTR != lptrConstModule)
          && (NULL_PTR != lptrCfgModule)
       ){
-         lptrConst = lptrConstModule;
+         lptrConst = (const ConstJ1939Tp_Type*)lptrConstModule;
          lptrCfg   = lptrCfgModule;
       }
       else{

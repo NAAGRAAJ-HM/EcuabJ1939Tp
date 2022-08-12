@@ -12,11 +12,11 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define J1939TP_CORE_FUNCTIONALITIES                                           \
-              FUNC(void, J1939TP_CODE) dummy                       (void);     \
+#define ECUABJ1939TP_CORE_FUNCTIONALITIES                                           \
+              FUNC(void, ECUABJ1939TP_CODE) dummy                       (void);     \
 
-#define J1939TP_CORE_FUNCTIONALITIES_VIRTUAL                                   \
-      virtual FUNC(void, J1939TP_CODE) dummy                       (void) = 0; \
+#define ECUABJ1939TP_CORE_FUNCTIONALITIES_VIRTUAL                                   \
+      virtual FUNC(void, ECUABJ1939TP_CODE) dummy                       (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,7 +27,7 @@
 /******************************************************************************/
 class class_EcuabJ1939Tp_Functionality{
    public:
-      J1939TP_CORE_FUNCTIONALITIES_VIRTUAL
+      ECUABJ1939TP_CORE_FUNCTIONALITIES_VIRTUAL
 };
 
 /******************************************************************************/

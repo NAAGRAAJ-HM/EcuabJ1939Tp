@@ -13,18 +13,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define J1939TP_AR_RELEASE_VERSION_MAJOR                                       4
-#define J1939TP_AR_RELEASE_VERSION_MINOR                                       3
+#define ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR                                       4
+#define ECUABJ1939TP_AR_RELEASE_VERSION_MINOR                                       3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(J1939TP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible J1939TP_AR_RELEASE_VERSION_MAJOR!"
+#if(ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(J1939TP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible J1939TP_AR_RELEASE_VERSION_MINOR!"
+#if(ECUABJ1939TP_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible ECUABJ1939TP_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -42,14 +42,14 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_EcuabJ1939Tp, J1939TP_VAR) EcuabJ1939Tp;
+VAR(module_EcuabJ1939Tp, ECUABJ1939TP_VAR) EcuabJ1939Tp;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::InitFunction(
-      CONSTP2CONST(ConstModule_TypeAbstract, J1939TP_CONST,       J1939TP_APPL_CONST) lptrConstModule
-   ,  CONSTP2CONST(CfgModule_TypeAbstract,   J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
+FUNC(void, ECUABJ1939TP_CODE) module_EcuabJ1939Tp::InitFunction(
+      CONSTP2CONST(ConstModule_TypeAbstract, ECUABJ1939TP_CONST,       ECUABJ1939TP_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   ECUABJ1939TP_CONFIG_DATA, ECUABJ1939TP_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == EcuabJ1939Tp_InitCheck)
    if(
@@ -83,14 +83,14 @@ FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::InitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  J1939TP_E_UNINIT
+         ,  ECUABJ1939TP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::DeInitFunction(
+FUNC(void, ECUABJ1939TP_CODE) module_EcuabJ1939Tp::DeInitFunction(
    void
 ){
 #if(STD_ON == EcuabJ1939Tp_InitCheck)
@@ -108,14 +108,14 @@ FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::DeInitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  J1939TP_E_UNINIT
+         ,  ECUABJ1939TP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::MainFunction(
+FUNC(void, ECUABJ1939TP_CODE) module_EcuabJ1939Tp::MainFunction(
    void
 ){
 #if(STD_ON == EcuabJ1939Tp_InitCheck)
@@ -132,14 +132,14 @@ FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::MainFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  J1939TP_E_UNINIT
+         ,  ECUABJ1939TP_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, J1939TP_CODE) module_EcuabJ1939Tp::dummy(
+FUNC(void, ECUABJ1939TP_CODE) module_EcuabJ1939Tp::dummy(
    void
 ){
 }

@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : EcuabJ1939Tp_core.hpp                                                  */
+/* File   : infEcuabJ1939Tp_ServiceDet.hpp                                                */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -12,11 +12,6 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ECUABJ1939TP_CORE_FUNCTIONALITIES                                           \
-              FUNC(void, ECUABJ1939TP_CODE) dummy                       (void);     \
-
-#define ECUABJ1939TP_CORE_FUNCTIONALITIES_VIRTUAL                                   \
-      virtual FUNC(void, ECUABJ1939TP_CODE) dummy                       (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -25,10 +20,9 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class class_EcuabJ1939Tp_Functionality{
-   public:
-      ECUABJ1939TP_CORE_FUNCTIONALITIES_VIRTUAL
-};
+typedef enum{
+      J1939TP_E_UNINIT
+}EcuabJ1939Tp_TypeServiceDetErrorCode;
 
 /******************************************************************************/
 /* CONSTS                                                                     */

@@ -24,7 +24,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 class module_EcuabJ1939Tp:
-      INTERFACES_EXPORTED_J1939TP
+      INTERFACES_EXPORTED_ECUABJ1939TP
       public abstract_module
    ,  public class_EcuabJ1939Tp_Functionality
 {
@@ -39,13 +39,13 @@ class module_EcuabJ1939Tp:
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-      FUNC(void, J1939TP_CODE) InitFunction(
-            CONSTP2CONST(ConstModule_TypeAbstract, J1939TP_CONST,       J1939TP_APPL_CONST) lptrConstModule
-         ,  CONSTP2CONST(CfgModule_TypeAbstract,   J1939TP_CONFIG_DATA, J1939TP_APPL_CONST) lptrCfgModule
+      FUNC(void, ECUABJ1939TP_CODE) InitFunction(
+            CONSTP2CONST(ConstModule_TypeAbstract, ECUABJ1939TP_CONST,       ECUABJ1939TP_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   ECUABJ1939TP_CONFIG_DATA, ECUABJ1939TP_APPL_CONST) lptrCfgModule
       );
-      FUNC(void, J1939TP_CODE) DeInitFunction (void);
-      FUNC(void, J1939TP_CODE) MainFunction   (void);
-      J1939TP_CORE_FUNCTIONALITIES
+      FUNC(void, ECUABJ1939TP_CODE) DeInitFunction (void);
+      FUNC(void, ECUABJ1939TP_CODE) MainFunction   (void);
+      ECUABJ1939TP_CORE_FUNCTIONALITIES
 };
 
 /******************************************************************************/
@@ -59,7 +59,7 @@ class module_EcuabJ1939Tp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-extern VAR(module_EcuabJ1939Tp, J1939TP_VAR) EcuabJ1939Tp;
+extern VAR(module_EcuabJ1939Tp, ECUABJ1939TP_VAR) EcuabJ1939Tp;
 
 /******************************************************************************/
 /* EOF                                                                        */

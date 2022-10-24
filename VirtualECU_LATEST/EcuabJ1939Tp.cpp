@@ -1,5 +1,5 @@
 /******************************************************************************/
-/* File   : EcuabJ1939Tp.cpp                                                       */
+/* File   : EcuabJ1939Tp.cpp                                                  */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -13,8 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR                                       4
-#define ECUABJ1939TP_AR_RELEASE_VERSION_MINOR                                       3
+#define ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR                                  4
+#define ECUABJ1939TP_AR_RELEASE_VERSION_MINOR                                  3
 
 /******************************************************************************/
 /* MACROS                                                                     */

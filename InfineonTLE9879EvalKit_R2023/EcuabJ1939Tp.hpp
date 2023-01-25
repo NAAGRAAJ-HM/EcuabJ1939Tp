@@ -1,13 +1,13 @@
 #pragma once
 /******************************************************************************/
-/* File   : EcuabJ1939Tp.hpp                                                       */
+/* File   : EcuabJ1939Tp.hpp                                                  */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "ConstEcuabJ1939Tp.hpp"
+#include "infEcuabJ1939Tp_ServiceNvM_Types.hpp"
 #include "CfgEcuabJ1939Tp.hpp"
 #include "EcuabJ1939Tp_core.hpp"
 #include "infEcuabJ1939Tp_Exp.hpp"

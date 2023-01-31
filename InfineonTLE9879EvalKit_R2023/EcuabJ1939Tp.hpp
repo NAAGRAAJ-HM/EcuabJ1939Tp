@@ -32,7 +32,7 @@ class module_EcuabJ1939Tp:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-      const ConstEcuabJ1939Tp_Type* lptrConst = (ConstEcuabJ1939Tp_Type*)NULL_PTR;
+      const ConstModule_TypeAbstract* lptrNvMBlocksRom = (ConstModule_TypeAbstract*)NULL_PTR;
       infServicePduRClient_Lo infServicePduRClient_EcuabJ1939Tp;
 
    public:
@@ -40,7 +40,7 @@ class module_EcuabJ1939Tp:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, ECUABJ1939TP_CODE) InitFunction(
-            CONSTP2CONST(ConstModule_TypeAbstract, ECUABJ1939TP_CONST,       ECUABJ1939TP_APPL_CONST) lptrConstModule
+            CONSTP2CONST(ConstModule_TypeAbstract, ECUABJ1939TP_CONST,       ECUABJ1939TP_APPL_CONST) lptrNvMBlocksRomModule
          ,  CONSTP2CONST(CfgModule_TypeAbstract,   ECUABJ1939TP_CONFIG_DATA, ECUABJ1939TP_APPL_CONST) lptrCfgModule
       );
       FUNC(void, ECUABJ1939TP_CODE) DeInitFunction (void);

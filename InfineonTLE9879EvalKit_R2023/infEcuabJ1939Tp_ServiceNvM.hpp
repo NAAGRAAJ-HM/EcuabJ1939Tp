@@ -7,11 +7,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CONSTECUABJ1939TP_AR_RELEASE_VERSION_MAJOR                             4
-#define CONSTECUABJ1939TP_AR_RELEASE_VERSION_MINOR                             3
-
-#define Const_DefaultInit_ConstEcuabJ1939Tp                                                                                \
-   ,  {CONSTECUABJ1939TP_AR_RELEASE_VERSION_MAJOR, CONSTECUABJ1939TP_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'} \
+#define NvM_InitBlocksRom_EcuabJ1939Tp                                                                           \
+   ,  {ECUABJ1939TP_AR_RELEASE_VERSION_MAJOR, ECUABJ1939TP_AR_RELEASE_VERSION_MINOR, 0x00,0xFF,0x01,'0','1','0'} \
 
 /******************************************************************************/
 /* EOF                                                                        */
